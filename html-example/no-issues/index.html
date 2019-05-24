@@ -33,6 +33,7 @@
 		text-decoration: none;
 		margin-top: 1em;
 		margin-right: 1em;
+		text-transform: uppercase;
 	}
 	.cta a {
 		color: #fff;
@@ -40,9 +41,34 @@
 	.img-responsive {
 		max-width: 100%;
 	}
+	.skiplink {
+		padding: 6px;
+		position: absolute;
+		top: -65px;
+		left: 0px;
+		color: white;
+		border-right: 1px solid white;
+		border-bottom: 1px solid white;
+		border-bottom-right-radius: 10px;
+		border-bottom-left-radius: 10px;
+		background: transparent;
+		-webkit-transition: top 1s ease-out, background 1s linear;
+		transition: top 1s ease-out, background 1s linear;
+		z-index: 100;
+	}
+	.skiplink:focus {
+		position: absolute;
+		left: 0px;
+		top: 0px;
+		background: #777;
+		outline: 0;
+		-webkit-transition: top .1s ease-in, background .5s linear;
+		transition: top .1s ease-in, background .5s linear;
+	}
 </style>
 </head>
 <body>
+	<a class="skiplink" href="#content" class="">Skip navigation</a>
 	<header>
 		<picture id="hero">
 		<!--[if IE 9]><video style="display: none;"><![endif]-->
@@ -53,16 +79,14 @@
 		</picture>
 	</header>
 	<nav>
-		<h1 id="hero-title">
-			<span>Integrating Accessibility in<br/>the Design Process<br/></span>
-		</h1>
+		<h1 id="hero-title">Integrating Accessibility in<br/>the Design Process</h1>
 		<div class="cta">
-			<span><a href="https://globalaccessibilityawarenessday.org/" target="_blank">TAKE ACTION</a></span>
+			<span><a href="https://globalaccessibilityawarenessday.org/" role="button">Take Action</a></span>
 		</div>
 	</nav>
-	<article>
+	<article id="content">
 		<div id="references">
-			<strong style="font-size:48px;">A list of references</strong>
+			<h2>A list of references</h2>
 			<ul>
 				<li><a href="https://medium.com/chialab-open-source/dont-call-it-accessibility-1506c1166f57">https://medium.com/chialab-open-source/dont-call-it-accessibility-1506c1166f57</a></li>
 				<li><a href="https://www.youtube.com/watch?v=XElu_4mrUfI">https://www.youtube.com/watch?v=XElu_4mrUfI</a></li>
@@ -76,6 +100,8 @@
 				<li><a href="https://www.unjiu.org/sites/www.unjiu.org/files/jiu_rep_2018_6_english.pdf">Enhancing accessibility for persons with disabilities to conferences and meetings of the United Nations system</a></li>
 				<li><a href="https://en.wikipedia.org/wiki/Fitts%27s_law">Fitt's Law</a></li>
 				<li><a href="https://www.epilepsysociety.org.uk/photosensitive-epilepsy#.XOekCdMzbDY">https://www.epilepsysociety.org.uk/photosensitive-epilepsy#.XOekCdMzbDY</a></li>
+				<li><a href="https://a11yproject.com/posts/getting-started-aria/">Getting started with ARIA</a></li>
+				<li><a href="https://www.un.org/en/webaccessibility/index.shtml">Accessibility Guidelines for United Nations websites</a></li>
 			</ul>
 		</div>
 	</article>
