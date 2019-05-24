@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
 <meta charset="utf-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
@@ -9,45 +9,75 @@
 		margin: 0;
 		padding: 0;
 		font-family: Helvetica Neue;
+		font-size: 2em;
+	}
+	nav, article {
+		padding: 1em;
+		clear: both;
 	}
 	#hero-title {
 		font-size: 2.5em;
-		padding: 1em;
+		float: left;
 	}
-	.cta {
+	.cta a {
 		border-color: rgb(112, 112, 112);
 		background-color: rgba(157,9,9,1);
 		border-radius: 1em;
-
-		position: absolute;
-		right: 10%;
-		top: 80%;
-
 		padding: 1% 5%;
 		white-space: nowrap;
 		font-style: normal;
 		font-weight: bold;
 		font-size: 2.5vw;
 		color: rgba(255,255,255,1);
+		float: right;
+		text-decoration: none;
+		margin-top: 1em;
+		margin-right: 1em;
+	}
+	.cta a {
+		color: #fff;
+	}
+	.img-responsive {
+		max-width: 100%;
 	}
 </style>
 </head>
 <body>
-<div>
-	<picture id="hero">
-	<!--[if IE 9]><video style="display: none;"><![endif]-->
-	<source srcset="hero.png" media="(max-width : 480px)">
-	<source srcset="hero.png" media="(max-width : 768px)">
-	<!--[if IE 9]></video><![endif]-->
-	<img class="img-responsive" src="hero@2x.png" title="A wheelchair sits empty in front of a set of stairs, no ramp in sight." width="100%" height="">
-	</picture>
-
-	<div id="hero-title">
-		<span>Integrating Accessibility in<br/>the Design Process<br/></span>
-	</div>
-	<div class="cta">
-		<span>Take Action</span>
-	</div>
-</div>
+	<header>
+		<picture id="hero">
+		<!--[if IE 9]><video style="display: none;"><![endif]-->
+		<source srcset="hero.png" media="(max-width : 480px)">
+		<source srcset="hero.png" media="(max-width : 768px)">
+		<!--[if IE 9]></video><![endif]-->
+		<img class="img-responsive" src="hero@2x.png" title="A wheelchair sits empty in front of a set of stairs, no ramp in sight." />
+		</picture>
+	</header>
+	<nav>
+		<h1 id="hero-title">
+			<span>Integrating Accessibility in<br/>the Design Process<br/></span>
+		</h1>
+		<div class="cta">
+			<span><a href="https://globalaccessibilityawarenessday.org/" target="_blank">TAKE ACTION</a></span>
+		</div>
+	</nav>
+	<article>
+		<div id="references">
+			<strong style="font-size:48px;">A list of references</strong>
+			<ul>
+				<li><a href="https://medium.com/chialab-open-source/dont-call-it-accessibility-1506c1166f57">https://medium.com/chialab-open-source/dont-call-it-accessibility-1506c1166f57</a></li>
+				<li><a href="https://www.youtube.com/watch?v=XElu_4mrUfI">https://www.youtube.com/watch?v=XElu_4mrUfI</a></li>
+				<li><a href="https://www.youtube.com/watch?v=YFMzTSiO17s">Integrating Accessibility and Design: Five Hot Tips for Start-ups</a></li>
+				<li><a href="https://www.youtube.com/watch?v=eIho2S0ZahI">https://www.youtube.com/watch?v=eIho2S0ZahI</a></li>
+				<li><a href="https://www.w3.org/WAI/standards-guidelines/atag/">Authoring Tool Accessibility Guidelines (ATAG) Overview</a></li>
+				<li><a href="https://www.youtube.com/watch?v=mz6BYTYZxuk">Selenium Conf: Automated accessibility testing - Dylan Barrell</a></li>
+				<li><a href="https://speckyboy.com/web-design-challenges-accessibility/">The Challenges Web Designers Face in Ensuring Website Accessibility</a></li>
+				<li><a href="https://medium.com/pulsar/which-accessibility-testing-tool-should-you-use-e5990e6ef0a">Which accessibility testing tool should you use?</a></li>
+				<li><a href="https://medium.com/chialab-open-source/dont-call-it-accessibility-1506c1166f57">Don’t Call it Accessibility</a></li>
+				<li><a href="https://www.unjiu.org/sites/www.unjiu.org/files/jiu_rep_2018_6_english.pdf">Enhancing accessibility for persons with disabilities to conferences and meetings of the United Nations system</a></li>
+				<li><a href="https://en.wikipedia.org/wiki/Fitts%27s_law">Fitt's Law</a></li>
+				<li><a href="https://www.epilepsysociety.org.uk/photosensitive-epilepsy#.XOekCdMzbDY">https://www.epilepsysociety.org.uk/photosensitive-epilepsy#.XOekCdMzbDY</a></li>
+			</ul>
+		</div>
+	</article>
 </body>
 </html>
